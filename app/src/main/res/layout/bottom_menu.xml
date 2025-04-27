@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackg">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_horizontal_rule_24"
+        android:layout_gravity="center|top"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/createText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:text="Bantuan"
+            android:padding="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:textSize="25dp"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_close_24"
+            android:layout_marginLeft="245dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/close_bottom_nav"
+            android:id="@+id/cancelButton"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:engine="math_jax"
+                    app:formula="\\lim_{x\\to{}\\infty{}}x"
+                    app:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="limit x menuju infinity x"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:engine="math_jax"
+                    app:formula="\\sum_{n=0}^{\\infty}"
+                    app:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="jumlah dari n sama dengan nol sampai infinity"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    app:engine="math_jax"
+                    app:formula="\\sqrt{100}=\\sqrt[3]{1000}"
+                    app:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="akar seratus sama dengan akar ke 3 dari seribu"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:engine="math_jax"
+                    app:formula="\\int_{a}^{b}f(x)dx"
+                    app:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="integral dari a ke b fungsi f dari x dx"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:engine="math_jax"
+                    app:formula="\\int{}x^{n}dx"
+                    app:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="integral x pangkat n dx"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    app:engine="math_jax"
+                    app:formula="\\frac{4}{2}+\\frac{1}{4}=\\frac{9}{4}"
+                    app:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="empat bagi dua tambah satu bagi empat sama dengan sembilan bagi empat"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:engine="math_jax"
+                    app:formula="x^{2}+5x-3=0"
+                    app:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x pangkat dua tambah lima x kurang tiga sama dengan nol"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:engine="math_jax"
+                    app:formula="a^{b^c}+2b-5c=0"
+                    app:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a pangkat b pangkat c tambah dua b kurang lima c sama dengan nol"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:engine="math_jax"
+                    app:formula="\\binom{x}{y}"
+                    app:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="binomial x dan y"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:engine="math_jax"
+                    app:formula="P(x,y)"
+                    app:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mutasi x ambil y"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:engine="math_jax"
+                    app:formula="f(x)=3x+4y"
+                    app:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fungsi f dari x sama dengan tiga x tambah empat y"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:engine="math_jax"
+                    app:formula="f'(x)=2x^{2}+4"
+                    app:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fungsi f turunan pertama dari x sama dengan dua x pangkat dua tambah empat"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:engine="math_jax"
+                    app:formula='f"(x)=4x'
+                    app:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fungsi f turunan kedua dari x sama dengan empat x"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    app:engine="math_jax"
+                    app:formula="\\log(4)=0,6"
+                    app:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="log empat sama dengan nol koma enam"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    app:engine="math_jax"
+                    app:formula="\\log_{2}(4)=2"
+                    app:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="log basis dua dari empat sama dengan dua"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    app:engine="math_jax"
+                    app:formula="\\log_{e}(x)=\ln(x)"
+                    app:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="log basis e dari x sama dengan log natural x"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    app:engine="math_jax"
+                    app:formula="\\csc(30°)=2"
+                    app:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kosek tiga puluh derajat sama dengan dua"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    app:engine="math_jax"
+                    app:formula="\\sec(45°)=\\sqrt{2}"
+                    app:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sekan empat puluh lima derajat sama dengan akar dua"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    app:engine="math_jax"
+                    app:formula="\\cot(180°)=\\infty"
+                    app:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kotangen seratus delapan puluh derajat sama dengan infinity"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    app:engine="math_jax"
+                    app:formula="\\begin{pmatrix}-2&amp;5&amp;1\\\\0&amp;8&amp;-7\\\\9&amp;-4&amp;-3\\end{pmatrix}"
+                    app:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="matriks min dua dan lima dan satu baris nol dan delapan dan min tujuh baris sembilan dan min empat dan min tiga baris"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:engine="math_jax"
+                    app:formula="x\\geq{}0\\lor{}x\\leq0"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x lebih besar sama dengan nol atau x lebih kecil sama dengan nol"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:engine="math_jax"
+                    app:formula="\\overline{x}=\\frac{1}{n}\\sum_{i=1}^{n}xi"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xbar x sama dengan satu bagi n jumlah dari i sama dengan satu sampai n x i"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:engine="math_jax"
+                    app:formula="\\pi=\\frac{22}{7}"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="bilangan pi sama dengan dua puluh dua bagi tujuh"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp">
+
+            <io.github.derysudrajat.mathview.MathView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:engine="math_jax"
+                app:formula="a\\cap{}b;a\\cup{}b;a-b=\\varnothing"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a irisan b titik koma a gabungan b titik koma a kurang b sama dengan himpunan kosong"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp">
+
+            <io.github.derysudrajat.mathview.MathView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:engine="math_jax"
+                app:formula="\\Delta{}t=t2-t1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="delta t sama dengan t dua kurang t satu"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp">
+
+            <io.github.derysudrajat.mathview.MathView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:engine="math_jax"
+                app:formula="\\pi=\\frac{22}{7}"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bilangan pi sama dengan dua puluh dua bagi tujuh"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:engine="math_jax"
+                    app:formula="x=2-3\\cos(\\theta{})"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x sama dengan dua kurang tiga cos theta"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:engine="math_jax"
+                    app:formula="6\\alpha{}=3\\beta{}=2\\gamma{}"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="enam alfa sama dengan tiga beta sama dengan dua gamma"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:engine="math_jax"
+                    app:formula="a\\notin{}b\\lor{}a\\in{}b"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a bukan anggota dari b atau a anggota dari b"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:engine="math_jax"
+                    app:formula="|3+4i|=5"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="nilai mutlak tiga tambah empat i sama dengan lima"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <io.github.derysudrajat.mathview.MathView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:engine="math_jax"
+                    app:formula="3,98\\approx{}4"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="tiga koma sembilan delapan mendekati empat"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
